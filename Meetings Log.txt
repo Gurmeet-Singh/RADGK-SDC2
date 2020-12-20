@@ -1,0 +1,22 @@
+Date - 20 Nov 2020
+Summary -
+Note that this meeting was before proper formation of the team.
+We discussed mainly on our first attempt at dealing with the datacube. Essentially, we agreed that we need to use some form of a "divide and rule" approach. We came up with the two following approaches:
+1) Directly splitting the cube into various sections in the spatial axes. And then running SOFiA on each of these cubelets.
+- The drawback of this method is that depending on the sizes of the sections it is possible that we might split a single source into two different cubelets and thus wrongly identify the sources.
+- Gurmeet will be taking a lead in this approach.
+2) First smooth the cube both spatially and along with the frequency axis. The full velocity resolution is ~10 km/s and full spatial resolution is ~3 arcsec of the cube. If we let say smooth 3 pixels along the velocity axis (~ 30 km/s resolution) and 5x5 pixels spatially (15 arcsec resolution), we will be able to reduce the data size by a factor of ~75. So a 1TB dataset will become ~13 GB. We can then run SOFiA on this smoothed datacube to identify regions of interest. We can then extract these regions of interest from the full resolution data using SOFiA masks. We expect that typically we will be left with ~250,000 cubelets on which we can then finally run SOFiA possibly in parallel so as to extract all the relevant information about the sources. Each of these cubelets should be few MBs and should be fairly fast to run individually.
+- The downside here is that we might miss some sources in the smoothed cube which then we may never model in the full resolution cube. This is something which we have to investigate.
+- Omkar will be leading this approach.
+
+An important input for both these approaches is to time SOFiA with the cubesize so as to see how it scales. This is something which we will be first investigating.
+
+We also acknowledged that these are relatively obvious approaches and hence we might have to do some more analysis and hence there are merely some initial tests to understand the data better. We also discussed some implementing some CNNs in the future to tremendously speed up the process.
+
+The other point is on regarding low-level RFI and residual continuum systematics. In this meeting, we didn't discuss much on it. I guess only after understanding the systematics in the test data we can move forward with it.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Date - 19 Dec 2020
+Summary -
+Discussed the above approaches with the team.
