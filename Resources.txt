@@ -1,0 +1,11 @@
+SDC2 related links -
+- Site Home Page - https://sdc2.astronomers.skatelescope.org/
+- Forum - https://sdc2-discussion.astronomers.skatelescope.org/
+- Sample Data (https://iitk-my.sharepoint.com/:f:/g/personal/gurmeet_iitk_ac_in/Ep6r6iuTsURPk_Jj28dxYTABg933NCiMuabZ_9tpHpw12g?e=9nGw3Vriginally provided by the SKA-SDC2 organizers for the teams to setup the pipeline, but has been removed by now.
+
+Tools -
+- CARTA (https://cartavis.github.io/) - Data Visualization tool, can be used for exploring the fits files
+- SoFiA 2 (https://github.com/SoFiA-Admin/SoFiA-2/wiki) - Command line tool to find the HI sources given a fits file. Look into the Manual (https://raw.githubusercontent.com/wiki/SoFiA-Admin/SoFiA-2/documents/SoFiA-2_User_Manual.pdf) and paper (https://arxiv.org/abs/1501.03906)
+- Anaconda (https://www.anaconda.com/products/individual) - Python based data science toolkit.
+- Python 3 (https://www.python.org/downloads/)
+- Astropy (https://www.astropy.org/) - Python library for astronomy. Will be useful for handling fits files and some basic machine learning analysis.
