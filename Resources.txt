@@ -1,7 +1,7 @@
 SDC2 related links -
 - Site Home Page - https://sdc2.astronomers.skatelescope.org/
 - Forum - https://sdc2-discussion.astronomers.skatelescope.org/
-- Sample Data (https://iitk-my.sharepoint.com/:f:/g/personal/gurmeet_iitk_ac_in/Ep6r6iuTsURPk_Jj28dxYTABg933NCiMuabZ_9tpHpw12g?e=9nGw3Vriginally provided by the SKA-SDC2 organizers for the teams to setup the pipeline, but has been removed by now.
+- Sample Data (https://iitk-my.sharepoint.com/:f:/g/personal/gurmeet_iitk_ac_in/Ep6r6iuTsURPk_Jj28dxYTABg933NCiMuabZ_9tpHpw12g?e=9nGw3V) - Originally provided by the SKA-SDC2 organizers for the teams to setup the pipeline, but has been removed by now.
 
 Tools -
 - CARTA (https://cartavis.github.io/) - Data Visualization tool, can be used for exploring the fits files
